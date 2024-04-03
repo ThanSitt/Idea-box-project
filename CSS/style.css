@@ -28,4 +28,14 @@ nav{
     color: var(--light-color);
     margin: 5px;
     font-size: 2em;
+    font-family: "Bauhaus 93";
+}
+
+.card-title{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.category{
+    margin-bottom: 1em;
 }
