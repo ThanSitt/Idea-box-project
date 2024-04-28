@@ -8,11 +8,22 @@
     <link href="./CSS/style.css" rel="stylesheet">
     <title>IdeaBox - About</title>
     <style>
+        :root {
+            --deep-purple-color: #673AB7; /* Deep purple color */
+            --text-color: #fff; /* White text color */
+            --pink-color: #36083C; /* Assuming you have this color set for the navbar and footer */
+            --light-color: #f5f5f5; /* For lighter text or elements, not defined in your snippet but adding for consistency */
+        }
         html, body {
             height: 100%;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            background-color: var(--deep-purple-color); /* Setting the background color to deep purple */
+            color: var(--text-color); /* Set the default text color to white */
+        }
+        h2, p, .nav-link, .navbar-brand, footer p {
+            color: var(--text-color); /* Apply white text color */
         }
         .img-half {
             height: 100vh;
@@ -25,29 +36,18 @@
             height: 100vh;
             overflow: hidden;
         }
+        nav {
+            background-color: var(--pink-color);
+        }
+        footer {
+            background-color: var(--pink-color);
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: var(--pink-color);">
+    <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html">IdeaBox</a>
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <!-- ... other navbar content ... -->
     </nav>
 
     <!-- text and image -->
@@ -55,28 +55,28 @@
         <!-- Text side -->
         <div class="col-md-6 d-flex align-items-center justify-content-center">
             <div class="px-5">
-                <h2>Hello World 🤖</h2>
-                <p>We're group C of DINSP23, designers of Ideabox. Our journey started on 21/03/2024 with an idea that came during the shower.<br>
-                Info: </p>
-                <p>Iniobong Equere</p>
-                <p>Sitt Min</p>
-                <p>Bao Nguyen</p>
-                <p>Riku Rautio</p>
-                <p>Kaarunya Tharumrajah</p>
+                <h2>🤖 Hello World 🤖</h2>
+                <p>We're group C of DINSP23, designers of <strong>Ideabox</strong>. Our journey started on 21/03/2024 with an idea that came during the shower.<br>
+                <br>
+                ✉️ Info: </p>
+                <p><strong>Iniobong Equere</strong></p>
+                <p><strong>Sitt Min</strong></p>
+                <p><strong>Bao Nguyen</strong></p>
+                <p><strong>Riku Rautio</strong></p>
+                <p><strong>Kaarunya Tharumrajah</strong></p>
+                <!-- Additional info -->
             </div>
         </div>
-        
         <!-- Image side -->
         <div class="col-md-6 img-half-container">
             <img src="https://www.talentedge.co.uk/wp-content/uploads/2020/05/AdobeStock_244937410.jpeg" alt="Group C" class="img-half w-100">
         </div>
     </div>
 
-    <footer style="background-color: var(--pink-color);">
-        <p style="color: var(--light-color);">footer</p>
+    <footer>
+        <p>footer</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="./JS/about.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
