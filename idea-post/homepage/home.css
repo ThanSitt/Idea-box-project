@@ -1,0 +1,92 @@
+body {
+  font-family: 'Ubuntu', sans-serif; /* Changed font family to Ubuntu */
+  font-size: 16px; /* Increased font size for better readability */
+  line-height: 1.6; /* Increased line height for better spacing */
+  color: #333;
+  background-color: #f4f4f4; /* Changed background color for better contrast */
+  overflow-x: hidden;
+}
+
+header {
+  padding: 20px 0; /* Increased padding for better spacing */
+  text-align: center;
+  margin-bottom: 20px; /* Increased margin for better separation */
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #43215b; /* Changed background color for better contrast */
+  color: #fff; /* Changed text color for better contrast */
+  padding: 10px 20px; /* Increased padding for better spacing */
+  border-radius: 5px; /* Added border radius for a softer look */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 40px; /* Adjusted image size for better proportion */
+  height: 40px;
+  border-radius: 50%; /* Added border radius for rounded profile picture */
+  margin-right: 10px; /* Increased margin for better spacing */
+}
+
+.buttons {
+  display: flex;
+  gap: 10px; /* Added gap between buttons for better separation */
+}
+
+.signup-btn,
+.login-btn,
+.logout-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-btn {
+  background-color: purple;
+  color: #fff;
+}
+
+.login-btn,
+.logout-btn {
+  background-color: transparent; /* Made login/logout button transparent for better contrast */
+  color: #fff;
+  border: 1px solid #fff; /* Added border for better visibility */
+}
+
+.login-btn:hover,
+.logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Added hover effect for better interactivity */
+}
+
+.idea {
+  margin-bottom: 20px;
+  padding: 20px; /* Simplified padding for consistency */
+  background-color: #fff; /* Changed background color for better contrast */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+  border-radius: 8px; /* Adjusted border radius for a softer look */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Improved grid layout for better responsiveness */
+  gap: 20px; /* Increased gap for better separation */
+}
+
+@media screen and (min-width: 768px) {
+  /* Add tablet-specific styles here if needed */
+}
+
+@media screen and (min-width: 1024px) {
+  /* Add desktop-specific styles here if needed */
+}
